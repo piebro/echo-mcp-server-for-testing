@@ -28,8 +28,8 @@ classifiers = [
 echo-mcp-server-for-testing = "echo_mcp_server_for_testing.server:main"
 
 [project.urls]
-"Homepage" = "https://github.com/piebro/mcp-client-for-testing"
-"Bug Tracker" = "https://github.com/piebro/mcp-client-for-testing/issues"
+"Homepage" = "https://github.com/piebro/mcp-server-for-testing"
+"Bug Tracker" = "https://github.com/piebro/mcp-server-for-testing/issues"
 
 [tool.ruff]
 line-length = 120
