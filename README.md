@@ -11,7 +11,7 @@ Install [uv](https://docs.astral.sh/uv/) and add the server to an MCP config usi
     "name": "echo-mcp-server-for-testing",
     "command": "uvx",
     "args": [
-        "echo-mcp-server-for-testing",
+        "echo-mcp-server-for-testing"
     ],
     "env": {
         "SECRET_KEY": "123456789"
