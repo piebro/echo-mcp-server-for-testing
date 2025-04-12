@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echo-mcp-server-for-testing"
+dynamic = ["version"]
+description = "A simple echo MCP (Model Context Protocol) Server for testing MCP Clients"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ruff",
+    "mcp",
+]
+authors = [
+    {name = "Piet Brömmel", email = "piet.broemmel@gmail.com"}
+]
+keywords = ["mcp", "server", "testing"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.scripts]
+echo-mcp-server-for-testing = "echo_mcp_server_for_testing.server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/piebro/mcp-client-for-testing"
+"Bug Tracker" = "https://github.com/piebro/mcp-client-for-testing/issues"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "F",        # Pyflakes
+    "UP",       # pyupgrade
+    "B018",     # Found useless expression.
+    "I",        # isort
+    "RUF",      # ruff
+]
+ignore = [
+  "E501", # line too long - will be fixed in format
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.setuptools_scm]
+# This will write the version to _version.py, used during packaging and at runtime
+write_to = "echo_mcp_server_for_testing/_version.py"
+version_scheme = "post-release"
+local_scheme = "node-and-date"
