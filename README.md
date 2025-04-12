@@ -1,6 +1,6 @@
 # echo-mcp-server-for-testing
 
-A simple echo MCP (Model Context Protocol) Server with a simple `echo_tool`for testing MCP Clients.
+A simple echo MCP (Model Context Protocol) Server with a simple `echo_tool` for testing MCP Clients.
 
 ## Usage
 
