@@ -25,7 +25,7 @@ classifiers = [
 ]
 
 [project.scripts]
-echo-mcp-server-for-testing = "echo_mcp_server_for_testing.server:main"
+echo-mcp-server-for-testing = "echo_mcp_server_for_testing.main:main"
 
 [project.urls]
 "Homepage" = "https://github.com/piebro/mcp-server-for-testing"

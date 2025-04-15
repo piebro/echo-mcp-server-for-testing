@@ -1,6 +1,7 @@
 # echo-mcp-server-for-testing
 
 A simple echo MCP (Model Context Protocol) Server with a simple `echo_tool` for testing MCP Clients.
+It is also great as a template for new MCP Servers.
 
 ## Usage
 
@@ -26,10 +27,10 @@ or clone the repo and use `uv` with a directory:
     "name": "echo-mcp-server-for-testing",
     "command": "uv",
     "args": [
-        "--directory", 
-        "path/to/root/dir/", 
-        "run", 
-        "server.py"
+        "--directory",
+        "path/to/root/dir/",
+        "run",
+        "main.py"
     ],
     "env": {
         "SECRET_KEY": "123456789"
@@ -54,7 +55,7 @@ uvx mcp-client-for-testing \
                 "--directory", 
                 "path/to/root/dir/", 
                 "run", 
-                "server.py"
+                "main.py"
             ],
             "env": {
                 "SECRET_KEY": "123456789"
