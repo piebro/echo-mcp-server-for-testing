@@ -3,6 +3,10 @@
 A simple echo MCP (Model Context Protocol) Server with a simple `echo_tool` for testing MCP Clients.
 It is also great as a template for new MCP Servers.
 
+<a href="https://glama.ai/mcp/servers/@piebro/echo-mcp-server-for-testing">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@piebro/echo-mcp-server-for-testing/badge" alt="Echo Server MCP server" />
+</a>
+
 ## Usage
 
 Install [uv](https://docs.astral.sh/uv/) and add the server to an MCP config using `uvx`:
